@@ -43,4 +43,4 @@ Here are some project ideas:
 Contributions to the AlgoDs Project are welcome! If you have any ideas for new projects, improvements to existing ones, or bug fixes, feel free to contribute. Simply fork this repository, make your changes, and submit a pull request. Make sure to follow the guidelines in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## License 📄
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
