@@ -17,7 +17,6 @@ Example:
 
 
 ## Projects 📋
-Here are some project ideas:
 #### 1. Animated Search Algorithm: https://animated-search-algorithms.vercel.app/
 
 ## Contributions 🤝
