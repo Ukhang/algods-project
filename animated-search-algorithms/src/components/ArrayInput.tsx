@@ -5,6 +5,11 @@ interface ArrayInputProps {
   onArrayChange: (newArray: number[]) => void;
 }
 
+const inputStyles = {
+  width: "340px",
+  padding: "4px 8px",
+};
+
 export const ArrayInput: React.FC<ArrayInputProps> = ({
   array,
   onArrayChange,
@@ -23,7 +28,9 @@ export const ArrayInput: React.FC<ArrayInputProps> = ({
   };
 
   return (
-    <div>
+    <div style={{
+      marginTop: "6px",
+    }}>
       <label htmlFor="array">Array Values:</label>
       <input
         type="text"
@@ -31,6 +38,7 @@ export const ArrayInput: React.FC<ArrayInputProps> = ({
         value={inputArray}
         onChange={handleInputChange}
         onBlur={handleBlur}
+        style={{ ...inputStyles}}
       />
     </div>
   );

@@ -19,7 +19,7 @@ export const TargetInput: React.FC<TargetInputProps> = ({
   };
 
   return (
-    <div>
+    <div style={{ marginTop: "6px", padding: "4px 8px" }}>
       <label htmlFor="target">Target Value:</label>
       <select id="target" value={target} onChange={handleSelectChange}>
         {array?.map((value) => (
