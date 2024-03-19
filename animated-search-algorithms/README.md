@@ -2,6 +2,9 @@
 
 This project is a visualization of various search algorithms using React and React Spring for animation. It allows users to input an array of numbers, specify a target value to search for, and select between different search algorithms such as linear search and binary search. The search process is animated, showing the progress of the algorithm as it searches for the target value.
 
+## Live Link
+https://animated-search-algorithms.vercel.app/
+
 ## Features
 
 - Visualization of linear search and binary search algorithms.
@@ -62,6 +65,5 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 This project is licensed under the MIT License.
 
 ```typescript
-
 Feel free to customize and expand upon this template as needed for your project. Make sure to replace placeholders such as `your-username` with your actual GitHub username and adjust any URLs or paths accordingly.
 ```
