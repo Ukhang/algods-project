@@ -177,7 +177,7 @@ export const SearchAnimation: React.FC<SearchAnimationProps> = ({
       <animated.div style={resultAnimation}>
         {resultIndex !== -1 ? `Found at index ${resultIndex}` : "Not Found"}
       </animated.div>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", fontSize: "18px" }}>
         {springs.map((props, i) => (
           <animated.div key={i} style={props}>
             {array[i]}
