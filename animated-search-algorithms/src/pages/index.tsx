@@ -10,7 +10,10 @@ export default function Home() {
       <Head>
         <title>Animated Search Algorithm</title>
       </Head>
-      <main className={inter.className}>
+      <main 
+        className={inter.className}
+        style={{ display: "flex", flexDirection: "column",}}
+      >
         <h2>🔍 Searching Algorithms with React</h2>
         <SearchAnimation defaultTarget={12} />
       </main>

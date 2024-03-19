@@ -40,6 +40,8 @@ export const SearchAnimation: React.FC<SearchAnimationProps> = ({
     transform: `scale(${resultIndex !== -1 ? 1 : 0.5})`,
     color: resultIndex !== -1 ? "#00AA00" : "#FF0000",
     fontSize: resultIndex !== -1 ? "16px" : "16px",
+    display: "flex",
+    justifyContent: "center",
   });
 
   const [springs, setSprings] = useSprings(array.length, (index) => ({
@@ -158,12 +160,14 @@ export const SearchAnimation: React.FC<SearchAnimationProps> = ({
       <div style={{
         display: "flex",        
         gap: "4px",
-        marginTop: "6px"
+        marginTop: "6px",
+        alignItems: "center",
+        justifyContent: "center"
       }}>
         <select
           value={selectedFunction}
           onChange={(e) => setSelectedFunction(e.target.value)}
-          style={{padding: "4px 8px" }}
+          style={{padding: "4px 8px"}}
         >
           <option value="linear">Linear Search</option>
           <option value="binary">Binary Search</option>
@@ -173,7 +177,7 @@ export const SearchAnimation: React.FC<SearchAnimationProps> = ({
       <animated.div style={resultAnimation}>
         {resultIndex !== -1 ? `Found at index ${resultIndex}` : "Not Found"}
       </animated.div>
-      <div>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
         {springs.map((props, i) => (
           <animated.div key={i} style={props}>
             {array[i]}
