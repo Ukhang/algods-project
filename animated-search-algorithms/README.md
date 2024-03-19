@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Animated Search Algorithm
+
+This project is a visualization of various search algorithms using React and React Spring for animation. It allows users to input an array of numbers, specify a target value to search for, and select between different search algorithms such as linear search and binary search. The search process is animated, showing the progress of the algorithm as it searches for the target value.
+
+## Features
+
+- Visualization of linear search and binary search algorithms.
+- Dynamic input for array values and target value.
+- Animation of the search process.
+- Adjustable delay time for animation speed.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js (v14.x or later)
+- npm (v6.x or later)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/animated-search-algorithm.git
+    ```
+
+
+2. Navigate into the project directory:
+    ```bash
+    cd animated-search-algorithm
+    ```
+
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+### Usage
+1. Start the development server:
+    ```bash
+    npm start
+    ```
+2. Open your web browser and visit http://localhost:3000 to view the application.
+
+3. Input an array of numbers and specify a target value to search for.
+
+4. Select a search algorithm (linear search or binary search) from the dropdown menu.
+
+5. Click the "Search" button to start the search process.
+
+6. Watch the animated visualization of the search algorithm and view the search result.
+
+### Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/your-feature-name).
+3. Commit your changes (git commit -am 'Add some feature').
+4. Push to the branch (git push origin feature/your-feature-name).
+5. Create a new pull request.
+
+### License
+This project is licensed under the MIT License.
+
+```typescript
+
+Feel free to customize and expand upon this template as needed for your project. Make sure to replace placeholders such as `your-username` with your actual GitHub username and adjust any URLs or paths accordingly.
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
