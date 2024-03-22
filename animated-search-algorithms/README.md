@@ -24,11 +24,14 @@ https://animated-search-algorithms.vercel.app/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/animated-search-algorithm.git
+   git clone https://github.com/<your-username>/algods-project.git
     ```
 
 
 2. Navigate into the project directory:
+    ```bash
+    cd algods-project
+    ```
     ```bash
     cd animated-search-algorithm
     ```
