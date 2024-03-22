@@ -19,9 +19,7 @@ list_projects() {
     echo "List of Projects:"
     # You can add more logic here to list projects from your directory structure
     # For now, just display a placeholder message
-    echo "1. Placeholder Project 1"
-    echo "2. Placeholder Project 2"
-    echo "3. Placeholder Project 3"
+    echo "1. Animated Search Algorithm 1"
 }
 
 # Function to display contribution guidelines
