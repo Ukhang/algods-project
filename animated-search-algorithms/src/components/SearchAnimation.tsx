@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useSpring, animated, useSprings } from "react-spring";
 import { ArrayInput } from "./ArrayInput";
 import { TargetInput } from "./TargetInput";
-import { resolve } from "path";
 
 interface SearchAnimationProps {
   defaultTarget: number;
@@ -20,7 +19,7 @@ const searchAnimationStyles = {
   margin: "0 auto",
 };
 
-const tempArray: Array<number> = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 57, 28, 30, 32];
+const tempArray: Array<number> = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32];
 
 export const SearchAnimation: React.FC<SearchAnimationProps> = ({
   defaultTarget,
