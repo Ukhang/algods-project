@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useSpring, animated, useSprings } from "react-spring";
 import { ArrayInput } from "./ArrayInput";
 import { TargetInput } from "./TargetInput";
-import { binarySearch, linearSearch } from "@/algorithms";
+import { binarySearch, jumpSearch, linearSearch } from "@/algorithms";
+import { searchLists, tempArray } from "@/constants";
 
 interface SearchAnimationProps {
   defaultTarget: number;
@@ -19,10 +20,6 @@ const searchAnimationStyles = {
   width: "400px",
   margin: "0 auto",
 };
-
-const tempArray: Array<number> = [
-  2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32,
-];
 
 export const SearchAnimation: React.FC<SearchAnimationProps> = ({
   defaultTarget,
@@ -53,9 +50,23 @@ export const SearchAnimation: React.FC<SearchAnimationProps> = ({
   }));
 
   const handleSearch = () => {
-    const searchFunction =
-      selectedFunction === "linear" ? linearSearch : binarySearch;
-    searchFunction(array, target, setTimeAndSpace, setResultIndex, setSprings);
+    let searchFunction;
+    switch (selectedFunction) {
+      case "linear":
+      searchFunction = linearSearch;
+      break;
+    case "binary":
+      searchFunction = binarySearch;
+      break;
+    case "jump":
+      searchFunction = jumpSearch; // Add Jump Search function here
+      break;
+    default:
+      break;
+    };
+    if (searchFunction) {
+      searchFunction(array, target, setTimeAndSpace, setResultIndex, setSprings);
+    }
   };
 
   const handleTargetChange = (value: number) => {
@@ -100,8 +111,11 @@ export const SearchAnimation: React.FC<SearchAnimationProps> = ({
           onChange={(e) => setSelectedFunction(e.target.value)}
           style={{ padding: "4px 8px" }}
         >
-          <option value="linear">Linear Search</option>
-          <option value="binary">Binary Search</option>
+          {searchLists.map((item) => (
+            <option key={item} value={item} style={{ textTransform: "capitalize" }}>
+              {item} Search
+            </option>
+          ))}
         </select>
         <button onClick={handleSearch} style={{ padding: "4px 8px" }}>
           Search
