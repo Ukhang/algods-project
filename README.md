@@ -16,11 +16,6 @@ Example:
 | Approch 1            | O(?)                     | O(?)                    |
 
 
-## Projects 📋
-#### 1. Animated Search Algorithm: 
-Folder: <a href="/animated-search-algorithms/">animated-search-algorithms</a>
-</br>
-Live Link: https://animated-search-algorithms.vercel.app/
 
 ## Contributions 🤝
 Contributions to the AlgoDs Project are welcome! If you have any ideas for new projects, improvements to existing ones, or bug fixes, feel free to contribute. Simply fork this repository, make your changes, and submit a pull request. Make sure to follow the guidelines in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
